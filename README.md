@@ -1,6 +1,6 @@
 Jellyscrub
 ====================
-<img src="https://raw.githubusercontent.com/nicknsy/jellyscrub/main/logo/logo.png" width="500">
+<img src="https://raw.githubusercontent.com/Kuschel-code/jellyscrub/main/logo/logo.png" width="500">
 
 ## ⚠️ Warning for Jellyfin 10.9+ ⚠️ ##
 Trickplay functionality has been upstreamed into Jellyfin 10.9.0, and as such, <b>Jellyscrub's trickplay functionality will not be maintained after 10.9.0 is officially released.</b> However, Jellyscrub has been updated to version 2.0.0 which only allows for the conversion of your already generated .bif files to Jellyfin's new native format.
@@ -27,15 +27,15 @@ The trickplay data for a 1:30hr movie with 320x180 thumbnails only takes about 6
 
 Jellyfin Default [<b>SSL, Cloudflare Proxy</b>] (Minimum of 5m Interval):
 <br/>
-<img src="https://github.com/nicknsy/jellyscrub/raw/main/logo/jellyfin-cloudflare.gif" width="500">
+<img src="https://github.com/Kuschel-code/jellyscrub/raw/main/logo/jellyfin-cloudflare.gif" width="500">
 
 Jellyscrub [<b>SSL, Cloudflare Proxy</b>] (Default 10s Interval, 320px width):
 <br/>
-<img src="https://github.com/nicknsy/jellyscrub/raw/main/logo/jellyscrub-cloudflare.gif" width="500">
+<img src="https://github.com/Kuschel-code/jellyscrub/raw/main/logo/jellyscrub-cloudflare.gif" width="500">
 
 Jellyscrub on iOS [<b>Single Screenshot, Functions Same as Above</b>]:
 <br/>
-<img src="https://github.com/nicknsy/jellyscrub/raw/main/logo/jellyscrub-ios.jpg" width="500">
+<img src="https://github.com/Kuschel-code/jellyscrub/raw/main/logo/jellyscrub-ios.jpg" width="500">
 
 ## Installation ##
 <b>NOTE: The client script will fail to inject automatically into the jellyfin-web server if there is a difference in permission between the owner of the web files (root, or www-data, etc.) and the executor of the main jellyfin-server. This often happens because...</b>
@@ -45,7 +45,7 @@ Jellyscrub on iOS [<b>Single Screenshot, Functions Same as Above</b>]:
 
 <b>NOTE: If you manually injected the script tag, you will have to manually inject it on every jellyfin-web update, as the index.html file will get overwritten. However, for normal Jellyscrub updates the script tag will not need to be changed as the plugin will return the latest script from /ClientScript</b>
 
-1. Add https://raw.githubusercontent.com/nicknsy/jellyscrub/main/manifest.json as a Jellyfin plugin repository
+1. Add https://raw.githubusercontent.com/Kuschel-code/jellyscrub/main/manifest.json as a Jellyfin plugin repository
 2. Install Jellyscrub from the repository
 3. Restart the Jellyfin server
 4. If your Jellyfin's web path is set, the plugin should automatically inject the companion client script into the "index.html" file of the web server directory. Otherwise, the line `<script plugin="Jellyscrub" version="1.0.0.0" src="/Trickplay/ClientScript"></script>` will have to be added at the end of the body tag manually right before `</body>`. If you have a base path set, change `src="/Trickplay/ClientScript"` to `src="/YOUR_BASE_PATH/Trickplay/ClientScript"`.
