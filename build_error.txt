@@ -1,0 +1,11 @@
+  Wiederherzustellende Projekte werden ermittelt...
+  Alle Projekte sind f├╝r die Wiederherstellung auf dem neuesten Stand.
+C:\Users\Kuscheltier\Desktop\Jellyfin\Nick.Plugin.Jellyscrub\Conversion\ConversionTask.cs(2,21): error CS0234: Der Typ- oder Namespacename "Entities" ist im Namespace "Jellyfin.Data" nicht vorhanden. (M├Âglicherweise fehlt ein Assemblyverweis.) [C:\Users\Kuscheltier\Desktop\Jellyfin\Nick.Plugin.Jellyscrub\Nick.Plugin.Jellyscrub.csproj]
+
+Fehler beim Buildvorgang.
+
+C:\Users\Kuscheltier\Desktop\Jellyfin\Nick.Plugin.Jellyscrub\Conversion\ConversionTask.cs(2,21): error CS0234: Der Typ- oder Namespacename "Entities" ist im Namespace "Jellyfin.Data" nicht vorhanden. (M├Âglicherweise fehlt ein Assemblyverweis.) [C:\Users\Kuscheltier\Desktop\Jellyfin\Nick.Plugin.Jellyscrub\Nick.Plugin.Jellyscrub.csproj]
+    0 Warnung(en)
+    1 Fehler
+
+Verstrichene Zeit 00:00:00.62
