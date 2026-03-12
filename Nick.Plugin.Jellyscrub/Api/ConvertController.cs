@@ -21,7 +21,7 @@ namespace Nick.Plugin.Jellyscrub.Api;
 [Authorize(Policy = "RequiresElevation")]
 public class ConvertController : ControllerBase
 {
-    private static ConversionTask _conversionTask;
+    private static ConversionTask? _conversionTask;
 
     public ConvertController(
         ILoggerFactory loggerFactory,
@@ -54,7 +54,7 @@ public class ConvertController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public ActionResult ConvertAll([FromBody, Required] ConvertOptions convertOptions)
     {
-        _ = _conversionTask.ConvertAll(convertOptions).ConfigureAwait(false);
+        _ = _conversionTask!.ConvertAll(convertOptions).ConfigureAwait(false);
         return Ok();
     }
 
@@ -68,7 +68,7 @@ public class ConvertController : ControllerBase
     public ActionResult DeleteAll([FromBody, Required] DeleteOptions deleteOptions)
     {
         // TODO: DeleteNonConverted, DeleteNonEmpty
-        _ = _conversionTask.DeleteAll(deleteOptions).ConfigureAwait(false);
+        _ = _conversionTask!.DeleteAll(deleteOptions).ConfigureAwait(false);
         return Ok();
     }
 
@@ -88,9 +88,9 @@ public class ConvertController : ControllerBase
         switch (type)
         {
             case TaskType.Convert:
-                return Content(_conversionTask.GetConvertLog());
+                return Content(_conversionTask!.GetConvertLog());
             case TaskType.Delete:
-                return Content(_conversionTask.GetDeleteLog());
+                return Content(_conversionTask!.GetDeleteLog());
             default:
                 return NotFound();
         }

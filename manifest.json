@@ -10,11 +10,11 @@
         "versions": [
             {
                 "version": "2.1.0.0",
-                "changelog": "- support Jellyfin 10.10\n- .NET 9 update\n- allow plugin config to be edited on conversion page\n- other minor improvements",
-                "targetAbi": "10.10.0.0",
+                "changelog": "- support Jellyfin 10.11\n- .NET 9 update\n- allow plugin config to be edited on conversion page\n- other minor improvements",
+                "targetAbi": "10.11.0.0",
                 "sourceUrl": "https://github.com/Kuschel-code/jellyscrub/releases/download/2.1.0.0/Jellyscrub-v2.1.0.0.zip",
-                "checksum": "00091ddf3e373c97fad4148969fa3b1e",
-                "timestamp": "2026-03-12T01:00:00Z"
+                "checksum": "0a5261e455988bcaa4e97b1515546a24",
+                "timestamp": "2026-03-12T02:00:00Z"
             },
             {
                 "version": "2.0.0.0",

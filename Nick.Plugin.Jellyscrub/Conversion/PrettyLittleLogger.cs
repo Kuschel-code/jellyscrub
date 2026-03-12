@@ -37,7 +37,7 @@ public class PrettyLittleLogger
 
     private class LogMessage
     {
-        public string Text { get; set; }
+        public required string Text { get; set; }
         public string? Color { get; set; }
     }
 

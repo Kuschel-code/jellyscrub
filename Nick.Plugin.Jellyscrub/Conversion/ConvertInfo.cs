@@ -9,7 +9,7 @@ namespace Nick.Plugin.Jellyscrub.Conversion;
 
 public class ConvertInfo
 {
-    public BaseItem Item { get; set; }
-    public string Path { get; set; }
+    public required BaseItem Item { get; set; }
+    public required string Path { get; set; }
     public int Width { get; set; }
 }
