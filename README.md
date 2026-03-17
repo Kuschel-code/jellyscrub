@@ -2,7 +2,7 @@ Jellyscrub
 ====================
 <img src="https://raw.githubusercontent.com/Kuschel-code/jellyscrub/main/logo/logo.png" width="500">
 
-##  Warning for Jellyfin 10.11+  ##
+##  Jellyfin 10.11+  ##
 Trickplay functionality has been upstreamed into Jellyfin 10.9.0, and as such, <b>Jellyscrub's trickplay functionality will not be maintained.</b> However, Jellyscrub has been updated to version 2.1.0 (with .NET 9 support for Jellyfin 10.11+) which only allows for the conversion of your already generated .bif files to Jellyfin's new native format.
 
 <b>All that is required to convert your old .bif files is to update the plugin to the latest version through Jellyfin, restart the server, and visit the plugin configuration page in the dashboard.</b>
